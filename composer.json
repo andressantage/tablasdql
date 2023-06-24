@@ -1,0 +1,22 @@
+{
+    "name": "skylab-167/conexion-pdo-compuser-namespace",
+    "authors": [
+        {
+            "name": "Tatiana",
+            "email": "tatianacalderon10@gmail.com"
+        }
+    ],
+    "require": {
+        "bramus/router": "~1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\":
+           ["./clases/detalles",
+            "./clases/clientes",
+            "./clases",
+            "./clases/db"
+            ]
+        }
+    }
+}
