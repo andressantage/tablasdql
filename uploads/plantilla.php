@@ -20,6 +20,10 @@
         $stmt=$stmt->rowCount();//es para obtener el número de filas afectadas por la actualización
         echo json_encode($stmt);
     });
+    /* {
+        "id": 4,
+        "nom": ""
+    } */
 
     $router->delete("/camper", function(){
         $_DATA = json_decode(file_get_contents("php://input"), true);
@@ -34,13 +38,15 @@
     $router->post("/camper", function(){
         $_DATA = json_decode(file_get_contents("php://input"), true); 
         $cox = new \App\connect();
-        $res = $cox->con->prepare("INSERT INTO tablass (edad, nombre) VALUES (:EDAD, :NOMBRE)");
-        $res->bindValue("EDAD", $_DATA["edad"]);
+        $res = $cox->con->prepare("INSERT INTO tablass (nombre) VALUES (:NOMBRE)");
         $res->bindValue("NOMBRE", $_DATA["nom"]); 
         $res->execute();
         $resi=$res->rowCount(); 
         echo $resi;
     });
+    /* {
+        "nom": ""
+    } */
 
     $router->run();
 
