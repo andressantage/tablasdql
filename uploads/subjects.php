@@ -21,8 +21,8 @@
         echo json_encode($stmt);
     });
     /* {
-        "id": 4,
-        "nom": "Biologia"
+        "id": 9,
+        "nom": "Fisica"
     } */
 
     $router->delete("/camper", function(){
