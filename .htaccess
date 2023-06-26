@@ -1,4 +1,4 @@
 RewriteEngine On 
 RewriteCond %{REQUEST_FILENAME} !-f 
 RewriteCond %{REQUEST_FILENAME} !-d 
-RewriteRule ^ uploads/subjects.php [QSA,L]
+RewriteRule ^ uploads/team_educators.php [QSA,L]

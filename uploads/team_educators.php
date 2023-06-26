@@ -22,7 +22,7 @@
     });
     /* {
         "id": 4,
-        "nom": "Estudiante premium"
+        "nom": "Estudiante premium 8"
     } */
 
     $router->delete("/camper", function(){
