@@ -22,7 +22,7 @@
     });
     /* {
         "id": 4,
-        "nom": "Colombia"
+        "nom": "VENEZUELA"
     } */
 
     $router->delete("/camper", function(){
@@ -45,7 +45,7 @@
         echo $resi;
     });
     /* {
-        "nom": "Colombia"
+        "nom": "VENEZUELA"
     } */
 
     $router->run();
