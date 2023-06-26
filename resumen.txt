@@ -14,11 +14,11 @@ Would you like to define your dev dependencies (require-dev) interactively [yes]
 //RECORDAR SIEMPRE CONFIGURAR EL .htaccess para las routers
 
 {
-    "name": "apolt01-033/ph-pcomposer-crud-basic",
-    "description": "Iniciar",
+    "name": "skylab-167/conexion-pdo-compuser-namespace",
     "authors": [
         {
-            "name": "Andres"
+            "name": "Tatiana",
+            "email": "tatianacalderon10@gmail.com"
         }
     ],
     "require": {
@@ -31,7 +31,7 @@ Would you like to define your dev dependencies (require-dev) interactively [yes]
             "./clases/clientes",
             "./clases",
             "./clases/db"
-        ]
+            ]
         }
     }
 }

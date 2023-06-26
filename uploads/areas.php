@@ -45,7 +45,7 @@
         echo $resi;
     });
     /* {
-        "nom": "Circulo"
+        "nom": "Area computadores"
     } */
 
     $router->run();
