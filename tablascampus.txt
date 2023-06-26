@@ -1,4 +1,3 @@
-
 academic_area
 id
 id_area
