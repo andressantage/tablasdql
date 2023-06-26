@@ -41,3 +41,5 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f 
 RewriteCond %{REQUEST_FILENAME} !-d 
 RewriteRule ^ uploads/app.php [QSA,L]
+
+aqui se encuentra otra libreria que se usara de composer: https://github.com/vlucas/phpdotenv
