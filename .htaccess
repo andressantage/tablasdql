@@ -1,4 +1,4 @@
 RewriteEngine On 
 RewriteCond %{REQUEST_FILENAME} !-f 
 RewriteCond %{REQUEST_FILENAME} !-d 
-RewriteRule ^ uploads/personal_ref.php [QSA,L]
+RewriteRule ^ uploads/work_reference.php [QSA,L]
