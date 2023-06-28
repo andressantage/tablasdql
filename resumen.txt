@@ -42,4 +42,48 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d 
 RewriteRule ^ uploads/app.php [QSA,L]
 
+
+bramus/router
+https://github.com/bramus/router
+composer require bramus/router ~1.6
+
+
 aqui se encuentra otra libreria que se usara de composer: https://github.com/vlucas/phpdotenv
+COMANDO: composer require vlucas/phpdotenv
+
+
+{
+    "name": "andressan/tablasdql",
+    "authors": [
+        {
+            "name": "andressantage",
+            "email": "ingeniero.andres.santana@gmail.com"
+        }
+    ],
+    "require": {
+        "bramus/router": "~1.6",
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\":
+           ["./clases/detalles",
+            "./clases/clientes",
+            "./clases",
+            "./clases/db"
+            ]
+        }
+    }
+}
+
+
+=begin RewriteEngine On 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteRule ^ uploads/app.php [QSA,L]
+
+RewriteEngine On
+RewriteBase /pdo2/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule ^(.*)$ uploads/app.php [L,QSA] =end

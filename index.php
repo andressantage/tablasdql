@@ -1,11 +1,8 @@
 <?php
-    require 'vendor/autoload.php';
-    //use App\Clientes;
-    //tambien se puede:
-    new \App\detalle();
-    echo "<br>";
-    new \App\cliente();
-    //use App\Detalles;
-    //$cliente=new Clientes();
-    //$detalle= new Detalles(); 
+    echo "arreglo indexado numericamente";
+    $miArreglo=array("valor1","valor2","valor3");
+    echo "<pre>";
+    var_dump($miArreglo);
+    echo "</pre>";
+    echo $miArreglo[0]."<br>"; 
 ?>

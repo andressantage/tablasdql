@@ -1,14 +1,14 @@
 {
-    "name": "skylab-167/conexion-pdo-compuser-namespace",
+    "name": "andressan/tablasdql",
     "authors": [
         {
-            "name": "Tatiana",
-            "email": "tatianacalderon10@gmail.com"
+            "name": "andressantage",
+            "email": "ingeniero.andres.santana@gmail.com"
         }
     ],
     "require": {
-        "bramus/router": "~1.6",
-        "vlucas/phpdotenv": "^5.5"
+        "vlucas/phpdotenv": "^5.5",
+        "bramus/router": "~1.6"
     },
     "autoload": {
         "psr-4": {
